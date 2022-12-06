@@ -74,7 +74,7 @@ const food = (arr) => {
       console.log(foodObj);
       foodObj.meats.forEach((meatItem) => {
         //! the problem: we were trying to access an object with forEach method
-        // console.log();                       //! the solution: accessing the meats array within the object, than applying forEach
+        //! the solution: accessing the meats array within the object, than applying forEach
         obj[meatItem] = obj[meatItem] + 1 || 1;
       });
       foodObj.fish.forEach((fishItem) => {

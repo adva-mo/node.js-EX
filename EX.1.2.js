@@ -24,5 +24,7 @@ function callback(err) {
 //   });
 // });
 // console.log(fs.Stats.size("new-copy.txt"));
+debugger;
 let stats = fs.statSync("new-copy.txt");
+
 console.log(stats.size);
