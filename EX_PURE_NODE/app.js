@@ -9,13 +9,13 @@ import path from "path";
 // console.log(__dirname);
 // console.log(path.join(__dirname, "../public"));
 
-const publicDirectoryPath = path.join(__dirname, "../public");
-console.log(publicDirectoryPath);
+// const publicDirectoryPath = path.join(__dirname, "../public");
+// console.log(publicDirectoryPath);
 
 const server = http.createServer(function (req, res) {
   let parsedURL = url.parse(req.url, true);
   let path = parsedURL.pathname;
-  path = path.replace(/^\/+|\/+$/g, "");
+  // path = path.replace(/^\/+|\/+$/g, "");
   console.log(path);
   let qs = parsedURL.query;
   let headers = req.headers;
@@ -62,7 +62,7 @@ let routes = {
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.writeHead(200);
     res.write("/"); //!send html file
-    // res.send();
+
     res.end("\n");
   },
 
