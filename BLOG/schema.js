@@ -14,20 +14,6 @@
     lastName: "doe",
     posts: [],
   },
-][
-  //*    collection : posts:
-  ({
-    title: "my sunday",
-    writerId: "",
-    description: "was  amazing",
-    comments: [],
-  },
-  {
-    title: "my monday",
-    writerId: "",
-    description: "was even more amazing",
-    comments: [],
-  })
 ];
 
 // { title: "", writer: "", description: "", img: "", date: "", time: "" },
